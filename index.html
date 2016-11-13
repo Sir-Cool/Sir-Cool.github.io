@@ -2,4 +2,19 @@
 <html lang="en-us">
 <h1>This is a simple webpage.</h1>
 <p1>It's just a test really!</p1>
+<script>
+function solvecaesar(text) {
+    var i, j, output, highesthits;
+    output = "Error!"
+    highesthits = 0
+    var i, j;
+    for (i = j = 1; j <= 7; i = ++j) {
+        if (highesthits < englishdetection(onlyletters(affineshifttext(text, i, 1)))) {
+            output = affineshifttext(text, i)
+            highesthits = englishdetection(onlyletters(affineshifttext(text, i, 1)))
+        }
+    }
+    return output
+}
+</script>
 </html>
